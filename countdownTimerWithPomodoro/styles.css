@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    background-image: url('https://picsum.photos/2880/1620');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.timer {
+    width: 100%;
+}
+
+.display {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, 75%);
+    font-family: "Roboto Mono", monospace;
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    font-size: 70px;
+    color: #F2F3F4;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.display h1 {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 736px) {
+    .display {
+        font-size: 15px;
+    }
+}
+
+audio {
+    display: none;
+}
+
+p { 
+    font-size: 40px;
+    text-align: center;
+}
+
+.timer__controls {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.timer__controls > button {
+    border: solid 1px black;
+    padding: 7px;
+}
+
+.timer__controls {
+    margin: 0;
+    padding: 0;
+}
+
+.timer {
+    margin: 0;
+    padding: 0;
+
+}
+
+.timer__controls > input, button {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 15px;
+    padding: 0;
+    border: solid 1px black;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* button:hover {
+    font-size: 21px;
+} */
+
+input:hover {
+    background: lightblue;
+}
+
+input {
+    text-align: center;
+    transition: 0.7s;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: font-size 300ms;
+    white-space: nowrap;
+}
+
+.timer__controls > button {
+    background: rgba(244,244,244, 0.7);
+}
+
+form {
+    display: inline-block;
+    
+}
+
+

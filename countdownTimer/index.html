@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Countdown Timer</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/stopwatch.png">
+        <script src="push.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <div class="timer">
+            <div class="timer__controls">
+                <button data-time="20" class="timer__button">20 СЕК</button>
+                <button data-time="300" class="timer__button">Пшерва 5 мин</button>
+                <button data-time="900" class="timer__button">БИСТРА 15 мин</button>
+                <button data-time="1200" class="timer__button">ПЕРЕКУС 20 мин</button>
+                <button data-time="3600" class="timer__button">ЧАСИК НА ОБЕДИК</button> 
+                <input type="text" name="hours" id="hours" placeholder="НА СКОЛЬКО ЧАСОВ?">
+                <input type="text" name="minutes" id="minutes" placeholder="НА СКОЛЬКО МИНУТ?">                      
+                <button onclick="countdownTimeStart()">СТАРТУЕМ</button> 
+                <button onclick="pause1()">СТОПЭ</button>
+                <button onclick="cont()">ПРОДОЛЖАЕМ</button>
+
+            </div>
+            <div class="display">
+                <h1 class="display__time-left"></h1>
+                <p class="display__end-time"></p>
+            </div>
+        </div>
+        <audio controls id="audio">
+                <source src="audio/plucky.mp3" type="audio/mpeg">
+              </audio>
+
+        <script src="timer.js"></script>
+    </body>
+</html>
